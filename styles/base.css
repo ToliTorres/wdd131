@@ -1,0 +1,160 @@
+:root {
+    --primary-color: #1D4D72;
+    --nav-gb-color: #333333;
+    --secondary-color: #0dff00b6;
+    --accent-color: #35b2fa;
+    --text-color: #222;
+    --light-bg: #f9f9f9;
+    --card-bg: #fff;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: var(--text-color);
+    background-color: var(--light-bg);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+#course-title {
+    display: block;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+nav {
+    background-color: var(--nav-gb-color);
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 0.75rem 0;
+    margin: 1rem 0;
+
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
+}
+
+main {
+    max-width: 1100px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+main h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin: -0.5rem;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.75rem;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+    margin-top: 0;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.about-container .text {
+    flex: 2;
+}
+
+.about-container img {
+    width: 130px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.about-container h3 {
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.location {
+    margin: 2rem auto;
+    max-width: 900px;
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.image-location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-location img {
+    width: 100px;
+    border: 1px solid #ccc;
+}
+
+.image-location .caption {
+    text-align: center;
+    font-style: italic;
+    color: #444;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.location p {
+    margin: -0.5rem;
+    /* font-size: 1rem; */
+    /* line-height: 1.2; */
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 0.7rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9rem;
+}
+
+footer span {
+    color: var(--accent-color);
+}
+
+#lastModified {
+    color: var(--secondary-color);
+    margin-top: 0.5rem;
+}
