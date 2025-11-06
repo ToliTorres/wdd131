@@ -107,14 +107,14 @@ main h1 {
     gap: 1.5rem;
 }
 
-/* Tablet: 2 columnas (ej. min-width 600px) */
+/* Tablet: 2 columns (e. min-width 600px) */
 @media (min-width: 600px) {
     .temple-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-/* Escritorio: 3 columnas (ej. min-width 900px) */
+/* Desktop: 3 columns (e. min-width 900px) */
 @media (min-width: 900px) {
     .temple-grid {
         grid-template-columns: repeat(3, 1fr);
