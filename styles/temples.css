@@ -1,0 +1,159 @@
+:root {
+    --primary-color: #3C0A64;
+    --accent-color: #4da5e8;
+    --bg-color: #f9f9f9;
+    --text-color: #222;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    font-size: 1.5rem;
+    color: white;
+}
+
+/*
+#menu-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+*/
+
+#menu-button {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+#menu-button:hover {
+    color: var(--accent-color);
+}
+
+nav {
+    display: flex;
+    gap: 2rem;
+    background-color: transparent;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0;
+    border: none;
+}
+
+nav a:hover,
+nav a:focus {
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
+}
+
+nav.open {
+    display: flex;
+}
+
+main {
+    max-width: 800px;
+    margin: 1.5rem auto;
+    padding: 0 1rem;
+}
+
+main h1 {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.temple-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+/* Tablet: 2 columnas (ej. min-width 600px) */
+@media (min-width: 600px) {
+    .temple-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Escritorio: 3 columnas (ej. min-width 900px) */
+@media (min-width: 900px) {
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+figure {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    display: block;
+}
+
+figcaption {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.5rem;
+    font-weight: 600;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+footer span {
+    color: var(--accent-color);
+}
+
+#lastModified {
+    color: var(--accent-color);
+    margin-top: 0.5rem;
+}

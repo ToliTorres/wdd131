@@ -1,0 +1,27 @@
+@media (max-width: 768px) {
+    #menu-button {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--nav-bg);
+        padding: 1rem 0;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1000;
+    }
+
+    nav.open {
+        display: flex;
+        background-color: var(--primary-color);
+        padding: 1rem 0;
+    }
+
+    .header-container {
+        position: relative;
+    }
+}
