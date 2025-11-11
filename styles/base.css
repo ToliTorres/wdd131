@@ -141,6 +141,7 @@ main h1 {
     width: 130px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    aspect-ratio: 3 / 4;
 }
 
 .about-container h3 {
@@ -166,6 +167,7 @@ main h1 {
 .image-location img {
     width: 100px;
     border: 1px solid #ccc;
+    aspect-ratio: 4 / 3;
 }
 
 .image-location .caption {
