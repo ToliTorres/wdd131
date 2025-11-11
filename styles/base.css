@@ -104,19 +104,15 @@ main h1 {
 
 .card li {
     margin-bottom: 0.75rem;
-    /* adds vertical spacing */
 }
 
 .card a {
     display: inline-block;
     padding: 0.6rem 1rem;
-    /* increases touch target size */
     color: var(--primary-color);
-    background-color: var(--light-bg);
     border-radius: 6px;
     text-decoration: none;
     font-weight: 500;
-    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .about-container {
