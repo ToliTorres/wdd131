@@ -8,6 +8,11 @@
     --card-bg: #fff;
 }
 
+body,
+main {
+    min-height: 50vh;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--text-color);
@@ -187,4 +192,5 @@ footer span {
 #lastModified {
     color: var(--secondary-color);
     margin-top: 0.5rem;
+    min-height: 1.2em;
 }
