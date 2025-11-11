@@ -21,6 +21,10 @@ body {
     padding: 0;
 }
 
+html {
+    font-display: swap;
+}
+
 h1,
 h2,
 h3 {
@@ -58,11 +62,12 @@ nav a {
     padding: 0.75rem 1rem;
     display: inline-block;
     border-radius: 6px;
+    border-bottom: 2px solid transparent;
 }
 
 nav a:hover {
     color: var(--accent-color);
-    border-bottom: 2px solid var(--accent-color);
+    border-bottom-color: var(--accent-color);
     background-color: rgba(255, 255, 255, 0.065);
     outline: none;
 }
@@ -90,6 +95,7 @@ main h1 {
     border-radius: 10px;
     padding: 1rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    min-height: 250px;
 }
 
 .card h2 {
