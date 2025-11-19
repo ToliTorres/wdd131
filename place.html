@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yucatan Peninsula</title>
+    <meta name="description" content="Yucatán Peninsula information: population, weather, geography, and cultural facts.">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Yucatan Peninsula</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/cenote-IkKil2.webp" media="(min-width: 1000px)">
+                <source srcset="images/chichen-itza-equinox.webp" media="(min-width: 550px)">
+                <img src="images/Momoto-cejiazul.webp" alt="Places, fauna and flora of the Yucatan Peninsula." width="400" height="200">
+            </picture>
+
+            <!-- DATA CARD (left) -->
+            <div class="data card">
+                <h2>Data</h2>
+                <ul>
+                    <li><strong>Area:</strong> 81,000 sq km</li>
+                    <li><strong>Population:</strong> 4,500,000 (combined across Yucatán, Quintana Roo, and Campeche)</li>
+                    <li><strong>Capital:</strong> Mérida (largest and most influential city in the region)</li>
+                    <li><strong>Languages:</strong> Spanish (primary), Maya (Yucatec Maya commonly spoken)</li>
+                    <li><strong>Currency:</strong> Mexican Peso (MXN)</li>
+                    <li><strong>Time Zone:</strong> UTC−5 (Quintana Roo) / UTC−6 (Yucatán & Campeche)</li>
+                    <li><strong>Calling Code:</strong> +52</li>
+                    <li><strong>Internet TLD:</strong> .mx</li>
+                </ul>
+            </div>
+
+            <!-- WEATHER CARD (right) -->
+            <div class="weather card">
+                <h2>Weather</h2>
+                <img class="weather-icon-mobile" src="images/cloudy-day.svg" alt="Weather icon">
+                <ul>
+                    <li><strong>Temperature:</strong> <span id="temp">28</span> °C</li>
+                    <li><strong>Conditions:</strong> Partly Sunny</li>
+                    <li><strong>Wind:</strong> <span id="wind">4.2</span> km/h</li>
+                    <li><strong>Wind Chill:</strong> <span id="windchill"></span></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p> ©️ <span id="currentyear"></span> 🌊 Linda Torres 🌊 Yucatan Peninsula </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
