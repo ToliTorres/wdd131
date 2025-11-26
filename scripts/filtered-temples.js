@@ -106,7 +106,8 @@ function createTempleCard(list) {
         const figure = document.createElement("figure");
 
         figure.innerHTML = `
-            <img src="${t.imageUrl}" alt="${t.templeName} Temple" loading="lazy">
+            <img src="${t.imageUrl}" srcset="${t.imageUrl} 400w,
+          ${t.imageUrl} 250w" alt="${t.templeName} Temple" loading="lazy">
             <figcaption>
                 <h3>${t.templeName}</h3>
                 <p><strong>Location:</strong> ${t.location}</p>
