@@ -3,6 +3,7 @@
     --accent-color: #4da5e8;
     --bg-color: #f9f9f9;
     --text-color: #222;
+    --text-color-box: #FFFFFF
 }
 
 body {
@@ -14,7 +15,7 @@ body {
 
 header {
     background: var(--primary-color);
-    color: white;
+    color: var(--text-color-box);
     padding: 1rem;
 }
 
@@ -35,7 +36,7 @@ header p {
     display: none;
     background: none;
     border: none;
-    color: white;
+    color: var(--text-color-box);
     font-size: 2rem;
     cursor: pointer;
 }
@@ -46,7 +47,7 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: var(--text-color-box);
     text-decoration: none;
     font-weight: 600;
 }
@@ -102,7 +103,7 @@ main h1 {
 }
 
 figure {
-    background: white;
+    background: var(--text-color-box);
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -115,7 +116,7 @@ figure img {
 
 figcaption {
     background: var(--primary-color);
-    color: white;
+    color: var(--text-color-box);
     padding: 1rem;
     font-size: 0.9rem;
 }
@@ -127,7 +128,7 @@ figcaption h3 {
 
 footer {
     background: var(--primary-color);
-    color: white;
+    color: var(--text-color-box);
     text-align: center;
     padding: 1rem;
 }
