@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album – Linda Torres</title>
+    <meta name="description"
+        content="Album of temples of Mexico with images and names, built for the WDD 131 course project.">
+    <meta name="author" content="Linda Torres">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Temple Album</h1>
+            <button id="menu-button" aria-label="Menu">☰</button>
+            <nav id="main-nav">
+                <a href="#" data-filter="home">Home</a>
+                <a href="#" data-filter="old">Old</a>
+                <a href="#" data-filter="new">New</a>
+                <a href="#" data-filter="large">Large</a>
+                <a href="#" data-filter="small">Small</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+
+        <section class="temple-grid">
+
+        </section>
+    </main>
+    <footer>
+        <p>©️ <span id="currentyear"></span> 👽 Linda Torres 👽 Mexico City</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

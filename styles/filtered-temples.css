@@ -1,0 +1,138 @@
+:root {
+    --primary-color: #3C0A64;
+    --accent-color: #4da5e8;
+    --bg-color: #f9f9f9;
+    --text-color: #222;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg-color);
+    margin: 0;
+    color: var(--text-color);
+}
+
+header {
+    background: var(--primary-color);
+    color: white;
+    padding: 1rem;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+}
+
+#menu-button {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+@media (max-width: 700px) {
+    #menu-button {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        background: var(--primary-color);
+        padding: 1rem;
+    }
+
+    nav.open {
+        display: flex;
+    }
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 1rem;
+}
+
+main h1 {
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.temple-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+@media (min-width: 600px) {
+    .temple-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+figure {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+figure img {
+    width: 100%;
+    display: block;
+}
+
+figcaption {
+    background: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+figcaption h3 {
+    margin-top: 0;
+    color: var(--accent-color);
+}
+
+footer {
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer span,
+#lastModified {
+    color: var(--accent-color);
+}
