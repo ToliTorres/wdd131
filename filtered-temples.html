@@ -6,16 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temple Album – Linda Torres</title>
     <meta name="description"
-        content="Album of temples of Mexico with images and names, built for the WDD 131 course project.">
+        content="Interactive album of temples with images and details. Use the filters to easily explore ancient, new, large, or small temples.">
     <meta name="author" content="Linda Torres">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
+    
+    <link rel="preload"
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap"
-        rel="stylesheet">
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap"
+            rel="stylesheet">
+    </noscript>
 
-    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <!-- <link rel="stylesheet" href="styles/filtered-temples.css"> -->
+    <link rel="preload" href="styles/filtered-temples.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="styles/filtered-temples.css">
+    </noscript>
     <script src="scripts/filtered-temples.js" defer></script>
 </head>
 
