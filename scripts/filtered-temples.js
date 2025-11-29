@@ -109,7 +109,7 @@ function createTempleCard(list) {
             <img src="${t.imageUrl}"
             srcset="${t.imageUrl} 400w, ${t.imageUrl} 250w"
             alt="${t.templeName} Temple"
-            width="408" height="306"
+            width="400"
             loading="lazy">
             <figcaption>
                 <h3>${t.templeName}</h3>
