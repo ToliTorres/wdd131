@@ -40,6 +40,15 @@ h3 {
     border-radius: 4px;
 }
 
+.primary-color {
+    background-color: #6FB09A;
+}
+
+.secondary-color {
+    background-color: #F6F5F0;
+    border: 1px solid #ccc;
+}
+
 .wireframe-mobile {
     width: 300px;
     border: 1px solid #ccc;
