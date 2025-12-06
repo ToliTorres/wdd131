@@ -187,3 +187,32 @@ footer {
     letter-spacing: .5px;
     line-height: 1.5rem;
 }
+
+/* Settings for small screens (mobile) */
+@media (max-width: 600px) {
+
+    .page-container {
+        padding: 20px 10px;
+    }
+
+    .card {
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .star-rating label {
+        font-size: 28px;
+        padding: 3px;
+    }
+}
