@@ -135,10 +135,16 @@ textarea {
 }
 
 /* CHECKBOX GRID */
-.checkbox-group {
+/* .checkbox-group {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px 25px;
+    margin-bottom: 20px;
+} */
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     margin-bottom: 20px;
 }
 

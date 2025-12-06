@@ -25,3 +25,21 @@ products.forEach(product => {
     option.textContent = product.name;
     select.appendChild(option);
 });
+
+// REQUIRE AT LEAST ONE FEATURE
+document.addEventListener("DOMContentLoaded", () => {
+
+    const form = document.querySelector("form");
+    const featureCheckboxes = document.querySelectorAll("input[name='features']");
+
+    form.addEventListener("submit", function (e) {
+        // Check if at least one is selected
+        const oneChecked = Array.from(featureCheckboxes).some(cb => cb.checked);
+
+        if (!oneChecked) {
+            e.preventDefault();
+            alert("Please select at least one feature.");
+        }
+    });
+
+});

@@ -40,11 +40,20 @@
                     <fieldset>
                         <legend>Overall Rating:</legend>
                         <div class="star-rating">
-                            <input type="radio" id="star5" name="rating" value="5" required><label for="star5">★</label>
-                            <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
-                            <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
-                            <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
-                            <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+                            <input type="radio" id="star5" name="rating" value="5" required>
+                            <label for="star5">★</label>
+                        
+                            <input type="radio" id="star4" name="rating" value="4" required>
+                            <label for="star4">★</label>
+                        
+                            <input type="radio" id="star3" name="rating" value="3" required>
+                            <label for="star3">★</label>
+                        
+                            <input type="radio" id="star2" name="rating" value="2" required>
+                            <label for="star2">★</label>
+                        
+                            <input type="radio" id="star1" name="rating" value="1" required>
+                            <label for="star1">★</label>
                         </div>
                     </fieldset>
 
@@ -57,10 +66,29 @@
                             <span class="note">(Check all that apply)</span>
                         </legend>
 
-                        <label><input type="checkbox" name="features" value="durability"> Durability</label>
-                        <label><input type="checkbox" name="features" value="design"> Design</label>
-                        <label><input type="checkbox" name="features" value="performance"> Performance</label>
-                        <label><input type="checkbox" name="features" value="efficiency"> Efficiency</label>
+                        <div class="checkbox-group">
+                        
+                            <label for="feat1">
+                                <input type="checkbox" id="feat1" name="features" value="durability">
+                                Durability
+                            </label>
+
+                            <label for="feat2">
+                                <input type="checkbox" id="feat2" name="features" value="design">
+                                Design
+                            </label>
+                        
+                            <label for="feat3">
+                                <input type="checkbox" id="feat3" name="features" value="performance">
+                                Performance
+                            </label>
+                        
+                            <label for="feat4">
+                                <input type="checkbox" id="feat4" name="features" value="efficiency">
+                                Efficiency
+                            </label>
+                        
+                        </div>
                     </fieldset>
 
                     <label for="writtenReview">
