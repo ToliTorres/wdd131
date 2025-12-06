@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Confirmation</title>
+
+    <meta name="description"
+        content="Confirmation page for your product review submission. This page thanks the user and updates the total number of reviews submitted using localStorage.">
+    <meta name="author" content="Linda Torres">
+
+</head>
+
+<body>
+
+    <h1>Thank You for Your Review!</h1>
+
+    <p>Your review has been submitted successfully.</p>
+
+    <div id="counterDisplay"></div>
+
+    <script>
+        // Retrieve counter or initialize to 0
+        let reviewCount = Number(localStorage.getItem("reviewCount")) || 0;
+
+        // Increment and save
+        reviewCount++;
+        localStorage.setItem("reviewCount", reviewCount);
+
+        // Display count
+        document.getElementById("counterDisplay").textContent =
+            "You have submitted " + reviewCount + " reviews.";
+    </script>
+
+</body>
+
+</html>

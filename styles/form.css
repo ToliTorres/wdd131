@@ -1,0 +1,183 @@
+:root {
+    --header-footer-color: #0d193b;
+    --card-gb-color: #b2cdef;
+    --background-color: #ffffff;
+    --text-color: #222;
+    --secondary-txt-color: #0d6efd;
+    --border-color: #b4b4b4;
+    --star-color: #ffc107;
+    --star-hv-color: #ffdb70;
+    --h-f-hv-color: #12379d;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--background-color);
+    margin: 0;
+}
+
+/* HEADER */
+header {
+    background-color: var(--header-footer-color);
+    color: var(--background-color);
+    text-align: center;
+    padding: 25px 0;
+    font-size: 1.7rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+header,
+footer {
+    width: 100%;
+    display: block;
+}
+
+/* PAGE CONTAINER */
+.page-container {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    min-height: calc(100vh - 180px);
+}
+
+/* FORM CARD */
+.card {
+    background: var(--card-gb-color);
+    max-width: 650px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* LABELS & HEADERS */
+h1 {
+    margin: 0;
+    color: var(--background-color);
+}
+
+label,
+legend {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 6px;
+    color: var(--text-color);
+}
+
+legend .note {
+    display: block;
+    font-family: 'Caveat', cursive;
+    font-size: 1rem;
+    color: var(--secondary-txt-color);
+    margin-top: 4px;
+}
+
+.optional-text {
+    color: var(--secondary-txt-color);
+    font-weight: 600;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin-bottom: 18px;
+}
+
+/* INPUTS / SELECT / TEXTAREA */
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 15px;
+    background: var(--background-color);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 110px;
+}
+
+/* STAR RATING */
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.star-rating input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    /* display: none; */
+}
+
+.star-rating label {
+    font-size: 35px;
+    color: var(--background-color);
+    cursor: pointer;
+    transition: color 0.2s;
+    padding: 5px;
+}
+
+.star-rating input:checked~label {
+    color: var(--star-color);
+}
+
+.star-rating label:hover,
+.star-rating label:hover~label {
+    color: var(--star-hv-color);
+}
+
+/* CHECKBOX GRID */
+.checkbox-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 25px;
+    margin-bottom: 20px;
+}
+
+/* CHECKBOXES ALIGMENT */
+input[type="checkbox"] {
+    width: auto;
+    height: auto;
+    display: inline-block;
+    margin: 0 10px 0 0;
+    vertical-align: middle;
+    transform: none;
+}
+
+/* SUBMIT BUTTON */
+input[type="submit"] {
+    background: var(--header-footer-color);
+    color: var(--background-color);
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    padding: 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    width: 100%;
+    transition: 0.2s;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background: var(--h-f-hv-color);
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--header-footer-color);
+    color: var(--background-color);
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 14px;
+    letter-spacing: .5px;
+    line-height: 1.5rem;
+}
