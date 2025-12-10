@@ -96,13 +96,22 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!form) return;
 
     form.addEventListener("submit", (e) => {
+        // Avoid shipping for now
+        e.preventDefault(); 
+
         const checks = [...document.querySelectorAll("input[name='interest']")];
         const selected = checks.some(c => c.checked);
 
         if (!selected) {
-            e.preventDefault();
             showError("Please select at least one interest.");
+            return;
         }
+
+        // Show success message
+        showToast("Message sent! ✅");
+        
+        // Clear form
+        form.reset();
     });
 });
 
@@ -119,6 +128,22 @@ function showError(msg) {
     box.textContent = msg;
 }
 
+// Function to display toast
+function showToast(msg) {
+    const toast = document.createElement("div");
+    toast.className = "toast";
+    toast.textContent = msg;
+    document.body.appendChild(toast);
+
+    setTimeout(() => toast.style.opacity = "1", 100);
+
+    setTimeout(() => {
+        toast.style.opacity = "0";
+        setTimeout(() => toast.remove(), 500);
+    }, 2000); // disappears after 2 seconds
+}
+
+// Removes error message when changing checkboxes
 const checks = document.querySelectorAll("input[name='interest']");
 checks.forEach(c => c.addEventListener("change", () => {
     const box = document.getElementById("formError");

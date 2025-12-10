@@ -330,6 +330,22 @@ input[type="submit"]:hover {
     margin-bottom: 1rem;
 }
 
+/* Toast Message */
+.toast {
+    position: fixed;
+    top: 210px;
+    right: 50px;
+    background-color: var(--border-menu);
+    color: var(--text-white);
+    padding: 10px 16px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 9999;
+    font-weight: bold;
+}
+
 /* FOOTER */
 footer {
     text-align: center;
