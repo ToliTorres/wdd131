@@ -16,13 +16,14 @@
     <header>
         <div class="header-container">
             <div class="logo-title">
-                <img src="images/logo-zoom.jpg" alt="Seasonal Escapes Logo" class="company-logo">
+                <img src="images/logo-zoom.jpg" alt="Seasonal Escapes company logo" class="company-logo" width="150"
+                    loading="lazy">
                 <h1>Seasonal Escapes</h1>
             </div>
-            <button class="hamburger" id="hamburger-btn" aria-label="Open Menu">
+            <button class="hamburger" id="hamburger-btn" aria-label="Open Menu" aria-expanded="false">
                 ☰
             </button>
-            <nav id="main-menu">
+            <nav id="main-menu" role="navigation" aria-label="Main Menu">
                 <a href="index.html">Home</a>
                 <a href="tours.html">Seasonal Tours</a>
                 <a href="contact.html">Contact</a>
@@ -39,7 +40,7 @@
         <section class="calendar-section">
             <h2>This Month's Travel Calendar</h2>
             <div class="calendar-wrapper">
-                <img src="images/december-tours.jpg" alt="Monthly Travel Calendar">
+                <img src="images/december-tours.jpg" alt="Monthly Travel Calendar" loading="lazy">
             </div>
         </section>
 
@@ -47,39 +48,39 @@
             <h2>Featured Tours</h2>
 
             <div class="carousel-container">
-                <button class="carousel-btn prev">❮</button>
-                <div class="carousel-track">
+                <button class="carousel-btn prev" aria-label="Previous slide">❮</button>
 
+                <div class="carousel-track">
                     <article class="tour-card">
-                        <img src="images/chichen-itza-classic.jpg" loading="lazy">
+                        <img src="images/chichen-itza-classic.jpg" alt="Chichen Itza summer tour" loading="lazy">
                         <h3>Summer on the Mayan Route</h3>
                         <p>8-day trip</p>
                         <p>CDMX - $1,060 USD</p>
                     </article>
 
                     <article class="tour-card">
-                        <img src="images/bajacalifornia.jpg" loading="lazy">
+                        <img src="images/bajacalifornia.jpg" alt="Baja Whale Watching Tour" loading="lazy">
                         <h3>Baja among the Whales</h3>
                         <p>6-day trip</p>
                         <p>CDMX — $1,200 USD</p>
                     </article>
 
                     <article class="tour-card">
-                        <img src="images/chepe.jpg" loading="lazy">
+                        <img src="images/chepe.jpg" alt="Chepe Express train tour" loading="lazy">
                         <h3>Chepe Express</h3>
                         <p>5-day trip</p>
                         <p>CDMX — $870 USD</p>
                     </article>
 
                     <article class="tour-card">
-                        <img src="images/huasteca.jpg" loading="lazy">
+                        <img src="images/huasteca.jpg" alt="Huasteca Potosina waterfalls tour" loading="lazy">
                         <h3>Huasteca Potosina</h3>
                         <p>3-day trip</p>
                         <p>CDMX — $250 USD</p>
                     </article>
 
                 </div>
-                <button class="carousel-btn next">❯</button>
+                <button class="carousel-btn next" aria-label="Next slide">❯</button>
             </div>
         </section>
     </main>
@@ -87,16 +88,16 @@
     <footer>
         <div class="social-links">
             <a href="https://www.facebook.com/" target="_blank">
-                <img src="images/facebook.svg" alt="Facebook">
+                <img src="images/facebook.svg" alt="Facebook icon" loading="lazy">
             </a>
             <a href="https://www.instagram.com/" target="_blank">
-                <img src="images/instagram-color.svg" alt="Instagram">
+                <img src="images/instagram-color.svg" alt="Instagram icon" loading="lazy">
             </a>
             <a href="https://www.tiktok.com/" target="_blank">
-                <img src="images/tiktok.svg" alt="Tiktok">
+                <img src="images/tiktok.svg" alt="TikTok" loading="lazy">
             </a>
             <a href="https://wa.me/525555555555" target="_blank">
-                <img src="images/whatsapp.svg" alt="WhatsApp">
+                <img src="images/whatsapp.svg" alt="WhatsApp" loading="lazy">
             </a>
         </div>
         <p>©️ <span id="currentyear"></span> Linda Torres 🏖️🌊 Seasonal Escapes 🏞️🌳</p>
