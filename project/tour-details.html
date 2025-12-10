@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,17 +11,19 @@
     <script src="scripts/main.js" defer></script>
     <script type="module" src="scripts/tour-details.js"></script>
 </head>
+
 <body>
     <header>
         <div class="header-container">
             <div class="logo-title">
-                <img src="images/logo-zoom.jpg" alt="Seasonal Escapes Logo" class="company-logo">
+                <img src="images/logo-zoom.jpg" alt="Seasonal Escapes company logo" class="company-logo" width="150"
+                    loading="lazy">
                 <h1>Tours Details</h1>
             </div>
-            <button class="hamburger" id="hamburger-btn" aria-label="Open Menu">
+            <button class="hamburger" id="hamburger-btn" aria-label="Open Menu" aria-expanded="false">
                 ☰
             </button>
-            <nav id="main-menu">
+            <nav id="main-menu" role="navigation" aria-label="Main Menu">
                 <a href="index.html">Home</a>
                 <a href="tours.html">Seasonal Tours</a>
                 <a href="contact.html">Contact</a>
@@ -31,23 +34,24 @@
     <main>
         <section id="details"></section>
     </main>
-    
+
     <footer>
         <div class="social-links">
             <a href="https://www.facebook.com/" target="_blank">
-                <img src="images/facebook.svg" alt="Facebook">
+                <img src="images/facebook.svg" alt="Facebook icon" loading="lazy">
             </a>
             <a href="https://www.instagram.com/" target="_blank">
-                <img src="images/instagram-color.svg" alt="Instagram">
+                <img src="images/instagram-color.svg" alt="Instagram icon" loading="lazy">
             </a>
             <a href="https://www.tiktok.com/" target="_blank">
-                <img src="images/tiktok.svg" alt="Tiktok">
+                <img src="images/tiktok.svg" alt="TikTok icon" loading="lazy">
             </a>
             <a href="https://wa.me/525555555555" target="_blank">
-                <img src="images/whatsapp.svg" alt="WhatsApp">
+                <img src="images/whatsapp.svg" alt="WhatsApp icon" loading="lazy">
             </a>
         </div>
         <p>©️ <span id="currentyear"></span> Linda Torres 🏖️🌊 Seasonal Escapes 🏞️🌳</p>
     </footer>
 </body>
+
 </html>
